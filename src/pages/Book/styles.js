@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        // ustifyContent: 'space-between',
+        justifyContent: 'space-between',
         paddingTop: Constants.statusBarHeight,
     },
     title: {
@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
         marginTop: 15,
         color: '#2890ff',
         fontWeight: 'bold',
+        textAlign: 'center',
     },
     containerInputs: {
         width: '100%',
@@ -28,7 +29,6 @@ export const styles = StyleSheet.create({
         paddingTop: 10,
     },
     containerButtons: {
-        flex: 1,
         width: '100%',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -48,6 +48,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 10,
         alignItems: 'center',
         backgroundColor: '#ff4400',
+        marginBottom: '5%',
     },
     textAddButton: {
         fontSize: 18,
@@ -56,7 +57,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     cancelButton: {
-        //
+        marginBottom: '20%',
     },
     textCancelButton: {
         color: '#566',

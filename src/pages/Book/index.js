@@ -87,8 +87,8 @@ export const Book = ({navigation, route}) => {
     return (
         <View style={styles.container}>
             <StatusBar style='light' backgroundColor='#ff4400' />
-            <Text style={styles.title}>Adicione um novo livro</Text>
             <View style={styles.containerInputs}>
+            <Text style={styles.title}>Adicione um novo livro</Text>
                 <TextInput 
                     placeholder='Título...' 
                     placeholderTextColor='#000'
@@ -109,10 +109,11 @@ export const Book = ({navigation, route}) => {
                 />
             </View>
 
+            <TouchableOpacity style={styles.buttonCamera} onPress={() => setShowCamera(true)}>
+                <Icon name='camera' size={40} color='#fff' />
+            </TouchableOpacity>
+
             <View style={styles.containerButtons}>
-                <TouchableOpacity style={styles.buttonCamera} onPress={() => setShowCamera(true)}>
-                    <Icon name='camera' size={40} color='#fff' />
-                </TouchableOpacity>
 
                 <TouchableOpacity style={styles.addButton} onPress={verification}>
                     <Text style={styles.textAddButton}>Adicionar</Text>
